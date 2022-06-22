@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API para consulta de filmes</title>
+    <script src="app.js" defer> </script>
+</head>
+<body>
+
+<style> 
+    *{
+        font-family: 'sans-serif';
+    }
+    
+    body {
+        display: flex;
+        background-color: pink;
+    }
+
+.total input {
+    background-color: lightblue;
+}
+
+.total button{
+    background-color: #122a57;
+    color: blueviolet;
+    text-align: center;
+    border-radius: 30px;
+    width: 220px;
+    display:block;
+    text-decoration: none;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold; 
+}
+
+.total input{
+    background-color: #122a57;
+    color: #fff;
+    text-align: center;
+    border-radius: 30px;
+    width: 220px;
+    display:block;
+    text-decoration: none;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+}
+
+
+
+</style>
+
+
+<div class= "total">
+    <div style="display: flex;">
+        <div style="display: flex; width: 300px; height: 100px; justify-content: space-between; flex-direction: column;">
+            <input  id="login" placeholder="Login" onchange="preencherLogin(event)">
+            <input  id="senha" placeholder="Senha" type="password" oninput='preencherSenha(event)''>
+            <input  id="api-key" placeholder="Api Key" oninput="preencherApi(event)">
+            <button id="login-button">Login</button>
+        </div>
+        <div id="search-container" style="margin-left: 20px">
+            <input id="search" placeholder="Escreva...">
+            <button id="search-button" onclick=>Pesquisar Filme </button>
+        </div>
+      </div>
+</div>
+    </body>
+</html>
+
